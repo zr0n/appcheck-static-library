@@ -1,0 +1,1 @@
+../../../FirebaseAppCheck/FirebaseCore/Extension/FIRDependency.h

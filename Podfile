@@ -1,10 +1,17 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'FirebaseUnrealWrapper' do
   # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+  #use_frameworks! :linkage => :static
+  use_modular_headers!
 
   # Pods for FirebaseUnrealWrapper
+	pod 'FirebaseMessaging', :modular_headers => true
+	#pod 'FirebaseAnalytics', :modular_headers => true
+	pod 'FirebaseAppCheck' #, :modular_headers => true
+	pod 'Firebase' #, :modular_headers => true
+	#pod 'FirebaseCore' #, :modular_headers => true
+	#pod 'FirebaseCoreInternal' #, :modular_headers => true
 
 end

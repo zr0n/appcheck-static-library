@@ -7,14 +7,16 @@
 
 #import "FirebaseUnrealWrapper.h"
 #import "EPPZSwizzler.h"
+#import <Firebase.h>
+
 //#import <FirebaseAnalytics/FirebaseAnalytics.h>
-//#import <FirebaseAppCheck/FirebaseAppCheck.h>
+#import <FirebaseAppCheck/FirebaseAppCheck.h>
 //#import <FirebaseMessaging/FirebaseMessaging.h>
 
-@import Firebase;
-@import FirebaseAnalytics;
-@import FirebaseAppCheck;
-@import FirebaseMessaging;
+//@import Firebase;
+//@import FirebaseAnalytics;
+//@import FirebaseAppCheck;
+//@import FirebaseMessaging;
 @import UIKit;
 
 static FirebaseUnrealWrapper *s_instance = nil;
@@ -46,6 +48,7 @@ static NSString* _accessToken = @"Z";
      * an issue was submitted to firebase ios github, no fix will come soon.
      * https://github.com/firebase/firebase-ios-sdk/issues/7510
      */
+    /*
     
     //perform method swizzling on FIROptions class to fix path bug
     // Add empty placholder to target class
@@ -89,6 +92,7 @@ static NSString* _accessToken = @"Z";
     else{
         APMInfoPlistFileUtilMethodNotMatchSwizzling = YES;
     }
+     */
 }
 +(NSString*) getPlistPath{
     return s_firePlistPath;
@@ -149,7 +153,7 @@ static NSString* _accessToken = @"Z";
         //firebase library will read corrected plist path after ios swizzling
         [FIRApp configureWithOptions:options];
         
-        [FIRMessaging messaging].delegate = s_instance;
+        //[FIRMessaging messaging].delegate = s_instance;
         [FirebaseUnrealWrapper registerPushNotification];
         
     }
@@ -189,6 +193,7 @@ static NSString* _accessToken = @"Z";
 }
 
 + (void) fetchFCMToken{
+    
     [[FIRMessaging messaging] tokenWithCompletion:^(NSString *token, NSError *error) {
       if (error != nil) {
         NSLog(@"Error getting FCM registration token: %@", error);
@@ -203,7 +208,7 @@ static NSString* _accessToken = @"Z";
     
 }
 +(void)firebaseLogEventTest{
-    [FIRAnalytics logEventWithName:kFIREventLogin parameters:nil];
+    //[FIRAnalytics logEventWithName:kFIREventLogin parameters:nil];
 }
 +(void) requireAppCheckToken{
     FIRAppCheckDebugProvider *providerFactory = [[FIRAppCheckDebugProviderFactory alloc] init];

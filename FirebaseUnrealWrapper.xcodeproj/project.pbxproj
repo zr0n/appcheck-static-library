@@ -3,18 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AFA994B62A78253B00BD7EB5 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = AFA994B52A78253B00BD7EB5 /* FirebaseAnalytics */; };
-		AFA994B82A78253B00BD7EB5 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = AFA994B72A78253B00BD7EB5 /* FirebaseAppCheck */; };
-		AFA994BA2A78253B00BD7EB5 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = AFA994B92A78253B00BD7EB5 /* FirebaseMessaging */; };
 		AFA994C52A78356500BD7EB5 /* FirebaseUnrealWrapper-Bridging-Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA994C42A78356500BD7EB5 /* FirebaseUnrealWrapper-Bridging-Header.swift */; };
+		BEA8291589FA1E8147621D09 /* libPods-FirebaseUnrealWrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B98AEE061CE8135D8177B1 /* libPods-FirebaseUnrealWrapper.a */; };
 		D4269FF825F07519001628D6 /* EPPZSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = D4269FF625F07519001628D6 /* EPPZSwizzler.m */; };
 		D453BBDC25EFD413008B3E76 /* FirebaseUnrealWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D453BBDB25EFD413008B3E76 /* FirebaseUnrealWrapper.m */; };
 		D453BBDD25EFD413008B3E76 /* FirebaseUnrealWrapper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D453BBDA25EFD413008B3E76 /* FirebaseUnrealWrapper.h */; };
-		D5506E2BAD0923F28D1A157E /* Pods_FirebaseUnrealWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE757B6BC50C0D0F47D74081 /* Pods_FirebaseUnrealWrapper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		62989D13F2AA01D5708A3262 /* Pods-FirebaseUnrealWrapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseUnrealWrapper.release.xcconfig"; path = "Target Support Files/Pods-FirebaseUnrealWrapper/Pods-FirebaseUnrealWrapper.release.xcconfig"; sourceTree = "<group>"; };
+		77B98AEE061CE8135D8177B1 /* libPods-FirebaseUnrealWrapper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirebaseUnrealWrapper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA994C42A78356500BD7EB5 /* FirebaseUnrealWrapper-Bridging-Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirebaseUnrealWrapper-Bridging-Header.swift"; sourceTree = "<group>"; };
 		AFA994C62A783E3500BD7EB5 /* FirebaseUnrealWrapper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FirebaseUnrealWrapper-Bridging-Header.h"; sourceTree = "<group>"; };
 		D4269FF625F07519001628D6 /* EPPZSwizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPPZSwizzler.m; sourceTree = "<group>"; };
@@ -40,7 +38,6 @@
 		D453BBDA25EFD413008B3E76 /* FirebaseUnrealWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirebaseUnrealWrapper.h; sourceTree = "<group>"; };
 		D453BBDB25EFD413008B3E76 /* FirebaseUnrealWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirebaseUnrealWrapper.m; sourceTree = "<group>"; };
 		E064BEB6914A81519D3458DB /* Pods-FirebaseUnrealWrapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseUnrealWrapper.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseUnrealWrapper/Pods-FirebaseUnrealWrapper.debug.xcconfig"; sourceTree = "<group>"; };
-		FE757B6BC50C0D0F47D74081 /* Pods_FirebaseUnrealWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseUnrealWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,10 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFA994BA2A78253B00BD7EB5 /* FirebaseMessaging in Frameworks */,
-				AFA994B62A78253B00BD7EB5 /* FirebaseAnalytics in Frameworks */,
-				AFA994B82A78253B00BD7EB5 /* FirebaseAppCheck in Frameworks */,
-				D5506E2BAD0923F28D1A157E /* Pods_FirebaseUnrealWrapper.framework in Frameworks */,
+				BEA8291589FA1E8147621D09 /* libPods-FirebaseUnrealWrapper.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +55,7 @@
 		5F42E6207DB653D63F125C72 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FE757B6BC50C0D0F47D74081 /* Pods_FirebaseUnrealWrapper.framework */,
+				77B98AEE061CE8135D8177B1 /* libPods-FirebaseUnrealWrapper.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -123,11 +117,6 @@
 			dependencies = (
 			);
 			name = FirebaseUnrealWrapper;
-			packageProductDependencies = (
-				AFA994B52A78253B00BD7EB5 /* FirebaseAnalytics */,
-				AFA994B72A78253B00BD7EB5 /* FirebaseAppCheck */,
-				AFA994B92A78253B00BD7EB5 /* FirebaseMessaging */,
-			);
 			productName = FirebaseUnrealWrapper;
 			productReference = D453BBD725EFD413008B3E76 /* libFirebaseUnrealWrapper.a */;
 			productType = "com.apple.product-type.library.static";
@@ -138,7 +127,7 @@
 		D453BBCF25EFD412008B3E76 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					D453BBD625EFD412008B3E76 = {
 						CreatedOnToolsVersion = 12.4;
@@ -155,9 +144,6 @@
 				Base,
 			);
 			mainGroup = D453BBCE25EFD412008B3E76;
-			packageReferences = (
-				AFA994B42A78253B00BD7EB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-			);
 			productRefGroup = D453BBD825EFD413008B3E76 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -209,7 +195,7 @@
 		D453BBDE25EFD413008B3E76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -241,6 +227,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_BITCODE = NO;
@@ -261,29 +248,25 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_VERIFY_BITCODE = NO;
-				LIBRARY_SEARCH_PATHS = (
-					"$(SDKROOT)/usr/lib/swift/**",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)/**",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)/**",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				STRIP_SWIFT_SYMBOLS = NO;
-				SWIFT_INCLUDE_PATHS = "$(SDK_ROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/FirebaseUnrealWrapper-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = "";
 			};
 			name = Debug;
 		};
 		D453BBDF25EFD413008B3E76 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -315,6 +298,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_BITCODE = NO;
@@ -329,21 +313,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_VERIFY_BITCODE = NO;
-				LIBRARY_SEARCH_PATHS = (
-					"$(SDKROOT)/usr/lib/swift/**",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)/**",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)/**",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				STRIP_SWIFT_SYMBOLS = NO;
-				SWIFT_INCLUDE_PATHS = "$(SDK_ROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/FirebaseUnrealWrapper-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -356,7 +337,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,7 +367,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,35 +409,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		AFA994B42A78253B00BD7EB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		AFA994B52A78253B00BD7EB5 /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AFA994B42A78253B00BD7EB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		AFA994B72A78253B00BD7EB5 /* FirebaseAppCheck */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AFA994B42A78253B00BD7EB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAppCheck;
-		};
-		AFA994B92A78253B00BD7EB5 /* FirebaseMessaging */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AFA994B42A78253B00BD7EB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseMessaging;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D453BBCF25EFD412008B3E76 /* Project object */;
 }
